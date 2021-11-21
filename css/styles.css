@@ -141,7 +141,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
@@ -184,6 +183,16 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
+.feature-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -225,6 +234,7 @@ img {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 .description {
   padding: 30px 0;
@@ -234,6 +244,65 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+.team-social-icon {
+  fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/* Clients */
+.section-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -30px;
+}
+.section-clients-item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-right: 30px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.section-clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.section-clients-icon {
+  fill: currentColor;
+}
+.section-clients-link:hover,
+.section-clients-link:focus {
+  background-color: #ffffff;
+  color: var(--accent-color);
 }
 
 /* Button */
