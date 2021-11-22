@@ -38,9 +38,21 @@
         </nav>
         <ul class="auth-nav list">
           <li class="item">
-            <a href="" class="link current">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link current">
+              <svg class="icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item"><a href="" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+38 096 111 11 11" class="link">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -60,6 +72,11 @@
         <div class="container">
           <ul class="feature-list">
             <li class="item">
+              <div class="about">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
@@ -67,6 +84,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="about">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
@@ -74,6 +96,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="about">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
@@ -81,6 +108,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="about">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -301,19 +333,39 @@
               </a>
             </li>
             <li class="section-clients-item">
-              <a href="" class="section-clients-link"></a>
+              <a href="" class="section-clients-link">
+                <svg class="section-clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo2"></use>
+                </svg>
+              </a>
             </li>
             <li class="section-clients-item">
-              <a href="" class="section-clients-link"></a>
+              <a href="" class="section-clients-link">
+                <svg class="section-clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo3"></use>
+                </svg>
+              </a>
             </li>
             <li class="section-clients-item">
-              <a href="" class="section-clients-link"></a>
+              <a href="" class="section-clients-link">
+                <svg class="section-clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo4"></use>
+                </svg>
+              </a>
             </li>
             <li class="section-clients-item">
-              <a href="" class="section-clients-link"></a>
+              <a href="" class="section-clients-link">
+                <svg class="section-clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo5"></use>
+                </svg>
+              </a>
             </li>
             <li class="section-clients-item">
-              <a href="" class="section-clients-link"></a>
+              <a href="" class="section-clients-link">
+                <svg class="section-clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -322,21 +374,62 @@
     <!--Подвал-->
     <footer class="basement basic">
       <div class="container">
-        <a href="/" class="logo">Web<span class="logo-second">Studio</span></a>
-        <address class="addres-list">г. Киев, пр-т Леси Украинки, 26</address>
+        <div class="footer-other">
+          <div class="adress-other">
+            <a href="/" class="logo"
+              >Web<span class="logo-second">Studio</span></a
+            >
+            <address class="addres-list">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
 
-        <address>
-          <ul class="contacts-list">
-            <li class="item">
-              <a href="mailto:info@example.com" class="link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+            <address>
+              <ul class="contacts-list">
+                <li class="item">
+                  <a href="mailto:info@example.com" class="link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="second-other">
+            <h2 class="second-title">Присоединяйтесь</h2>
+            <ul class="second-social-list">
+              <li class="second-social-item">
+                <a href="" class="second-social-link">
+                  <svg class="second-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="second-social-item">
+                <a href="" class="second-social-link">
+                  <svg class="second-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="second-social-item">
+                <a href="" class="second-social-link">
+                  <svg class="second-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="second-social-item">
+                <a href="" class="second-social-link">
+                  <svg class="second-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

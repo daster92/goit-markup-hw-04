@@ -97,7 +97,9 @@ img {
   margin-right: 50px;
 }
 .auth-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -107,6 +109,10 @@ img {
   line-height: 1.2;
   text-decoration: none;
 }
+.auth-nav .icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -114,6 +120,7 @@ img {
 .auth-nav .link.current {
   color: var(--accent-color);
 }
+
 /* Hero */
 .hero {
   padding-top: 200px;
@@ -183,15 +190,20 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
-.feature-list .item::before {
-  display: block;
-  content: "";
+.feature-list .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.feature-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feature-list .title {
   margin-top: 0;
@@ -277,16 +289,14 @@ img {
 /* Clients */
 .section-clients {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
 }
 .section-clients-item {
-  flex-basis: calc(100% / 6 - 30px);
-  margin-right: 30px;
+  width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+}
+.section-clients-item + .section-clients-item {
+  margin-left: 30px;
 }
 .section-clients-link {
   width: 100%;
@@ -294,6 +304,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   color: #afb1b8;
 }
 .section-clients-icon {
@@ -303,6 +315,7 @@ img {
 .section-clients-link:focus {
   background-color: #ffffff;
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Button */
@@ -351,6 +364,8 @@ img {
 .button-link:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-link.current {
   background-color: var(--accent-color);
@@ -421,8 +436,58 @@ img {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
+.work-list .card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* Подвал */
 .basement {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.second-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+}
+.footer-other {
+  display: flex;
+  align-items: baseline;
+}
+.adress-other {
+  margin-right: 70px;
+}
+
+.second-social-list {
+  display: flex;
+}
+.second-social-item {
+  width: 44px;
+  height: 44px;
+}
+.second-social-item + .second-social-item {
+  margin-left: 10px;
+}
+.second-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.second-social-icon {
+  fill: currentColor;
+}
+.second-social-link:hover,
+.second-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
